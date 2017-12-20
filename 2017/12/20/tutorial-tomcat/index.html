@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="抓信,tomcat,infbox," />
 
 
 
@@ -79,16 +79,46 @@
 
 
 
-<meta name="description" content="抓信SDK使用手册">
-<meta property="og:type" content="website">
-<meta property="og:title" content="抓信InfBox">
-<meta property="og:url" content="https://infbox.com/index.html">
+<meta name="description" content="欢迎访问抓信InfBox SDK开发者  帮助中心! 我们将在这里发布关于抓信SDK的使用说明.抓信官网地址是： https://www.infbox.com .您可以在苹果应用商店、腾讯应用宝、百度手机助手、360手机助手、小米应用商店、魅族应用商店、华为应用商店搜索‘抓信’，下载抓信ＡＰＰ．抓信SDK目前推出了Ja">
+<meta name="keywords" content="抓信,tomcat,infbox">
+<meta property="og:type" content="article">
+<meta property="og:title" content="抓信SDK集成教程(Tomcat+MySQL)">
+<meta property="og:url" content="https://infbox.com/2017/12/20/tutorial-tomcat/index.html">
 <meta property="og:site_name" content="抓信InfBox">
-<meta property="og:description" content="抓信SDK使用手册">
+<meta property="og:description" content="欢迎访问抓信InfBox SDK开发者  帮助中心! 我们将在这里发布关于抓信SDK的使用说明.抓信官网地址是： https://www.infbox.com .您可以在苹果应用商店、腾讯应用宝、百度手机助手、360手机助手、小米应用商店、魅族应用商店、华为应用商店搜索‘抓信’，下载抓信ＡＰＰ．抓信SDK目前推出了Java版的SDK，并给出了一个基于Tomcat+MySQL的社群系统Demo.我们">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61303.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61333.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61417.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61460.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61507.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61304.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65709.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/62197.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/62267.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/62385.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/62387.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/3005.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65093.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65181.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65297.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65458.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65709.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65837.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/65965.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/66149.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/66281.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/66484.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/66972.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/67097.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/67191.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/67501.png">
+<meta property="og:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/67503.png">
+<meta property="og:updated_time" content="2017-12-20T08:52:22.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="抓信InfBox">
-<meta name="twitter:description" content="抓信SDK使用手册">
+<meta name="twitter:title" content="抓信SDK集成教程(Tomcat+MySQL)">
+<meta name="twitter:description" content="欢迎访问抓信InfBox SDK开发者  帮助中心! 我们将在这里发布关于抓信SDK的使用说明.抓信官网地址是： https://www.infbox.com .您可以在苹果应用商店、腾讯应用宝、百度手机助手、360手机助手、小米应用商店、魅族应用商店、华为应用商店搜索‘抓信’，下载抓信ＡＰＰ．抓信SDK目前推出了Java版的SDK，并给出了一个基于Tomcat+MySQL的社群系统Demo.我们">
+<meta name="twitter:image" content="https://infbox.com/2017/12/20/tutorial-tomcat/61303.png">
 
 
 
@@ -118,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="https://infbox.com/"/>
+  <link rel="canonical" href="https://infbox.com/2017/12/20/tutorial-tomcat/"/>
 
 
 
 
 
-  <title>抓信InfBox</title>
+  <title>抓信SDK集成教程(Tomcat+MySQL) | 抓信InfBox</title>
   
 
 
@@ -143,8 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +246,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/20/tutorial-tomcat/" itemprop="url">抓信SDK集成教程(Tomcat+MySQL)</a></h1>
+          <h1 class="post-title" itemprop="name headline">抓信SDK集成教程(Tomcat+MySQL)</h1>
         
 
         <div class="post-meta">
@@ -277,6 +304,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/20/tutorial-tomcat/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/12/20/tutorial-tomcat/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -301,9 +338,7 @@
       
 
       
-        
-          
-            <p>欢迎访问抓信InfBox SDK开发者  <a href="https://infbox.github.io/" target="_blank" rel="noopener">帮助中心</a>! 我们将在这里发布关于抓信SDK的使用说明.<br>抓信官网地址是： <a href="https://www.infbox.com" target="_blank" rel="noopener">https://www.infbox.com</a> .<br>您可以在苹果应用商店、腾讯应用宝、百度手机助手、360手机助手、小米应用商店、魅族应用商店、华为应用商店搜索‘抓信’，下载抓信ＡＰＰ．<br>抓信SDK目前推出了Java版的SDK，并给出了<a href="https://github.com/infbox/tomcat-demo" target="_blank" rel="noopener">一个基于Tomcat+MySQL的社群系统Demo</a>.<br>我们稍后将推出基于抓信SDK的开源任务管理系统。</p>
+        <p>欢迎访问抓信InfBox SDK开发者  <a href="https://infbox.github.io/" target="_blank" rel="noopener">帮助中心</a>! 我们将在这里发布关于抓信SDK的使用说明.<br>抓信官网地址是： <a href="https://www.infbox.com" target="_blank" rel="noopener">https://www.infbox.com</a> .<br>您可以在苹果应用商店、腾讯应用宝、百度手机助手、360手机助手、小米应用商店、魅族应用商店、华为应用商店搜索‘抓信’，下载抓信ＡＰＰ．<br>抓信SDK目前推出了Java版的SDK，并给出了<a href="https://github.com/infbox/tomcat-demo" target="_blank" rel="noopener">一个基于Tomcat+MySQL的社群系统Demo</a>.<br>我们稍后将推出基于抓信SDK的开源任务管理系统。</p>
 <h2 id="抓信是什么"><a href="#抓信是什么" class="headerlink" title="抓信是什么"></a>抓信是什么</h2><p>抓信是一款手机APP，旨在帮助手机用户获取真正有价值的信息，避免垃圾信息的干扰。<br>对于企业和个人开发者来说，借助抓信已有的SDK，您可以快速建立一个面向手机用户的移动应用系统，不需要再开发手机APP，也不用花钱申请各种企业资质，从而帮您节省大量的时间和研发费用。<br>在这个速度决定成败的时代，比竞争对手领先，意味着您将获得更好的市场先机。<br>初创企业在开拓一项新的互联网业务时，可以借助抓信APP验证自己的产品是否真正满足用户的需求。<br>好的产品应该是不需要任何推广就能让用户自发传播，您可以把自己的应用集成为抓信插件或快捷菜单，邀请几位种子用户，看看能否产生自发传播的效果。<br>，如果用户会自发传播，就说明您的产品是在解决用户真正的需求。</p>
 <h2 id="网站跟抓信对接的好处"><a href="#网站跟抓信对接的好处" class="headerlink" title="网站跟抓信对接的好处"></a>网站跟抓信对接的好处</h2><p>抓信的目标就是为各类网站提供一个公平、开放、去中心化的快速集成框架。<br>企业ERP/网站跟抓信集成有以下好处：<br>①　降低研发成本，加快研发进度。抓信为网站提供了现成的手机客户端和后台基础架构模块，企业可以直接使用。<br>②　不必审核。没有漫长的审核等待周期；随时升级；<br>③　平台中立，不用担心被平台封杀。抓信把封杀的权利完全交给了用户。<br>④　专注业务，有效避免用户在工作的同时受垃圾信息的干扰。<br>具有一定软件开发能力的个人开发者，可以基于抓信的社群代码快速开发出一个可正式商用的移动系统。<br>即将毕业的大学生，可以基于抓信完成自己的毕业论文的软件部分。</p>
 <h2 id="抓信二次开发与微信二次开发的不同"><a href="#抓信二次开发与微信二次开发的不同" class="headerlink" title="抓信二次开发与微信二次开发的不同"></a>抓信二次开发与微信二次开发的不同</h2><p>① 抓信二次开发专门致力于帮助中小企业或个人开发者节省成本，加快研发速度。举个例子，对于个人开发者，如果要做一个具有交易支付场景的应用，需要自己申请开通微信支付接口和支付宝支付接口，而微信接口和支付宝接口的申请又要求开发者提供座机号码和企业开户行账户，相关审核比较复杂，流程较慢，需要挨个申请对接。<br>而对于普通个人开发者来说，一般都没有座机号码和企业账户。所以，抓信为了帮开发者节省时间，提供了支付封装接口，开发者只要参考抓信的支付Demo代码，就能快速开发出同时支持支付宝和微信的交易系统。<br>② 抓信为Java开发者提供了一个实用而又详细的社群项目代码，这个代码完整展示了跟抓信对接的所有技术难点，使开发者不用担心在集成环节出错。<br>即使是项目经验不太丰富的大学生，也可以基于这个社群代码，快速扩展出一个创新性的手机应用。大大降低了集成的门槛。<br>③ 虽然抓信的用户数不如微信用户数多，但是，这也能更加容易地验证您的系统是否真正地创造用户价值。经常有很多创业者根据自己凭空想象出的一些用户需求，就贸然开发软件系统，然后以送礼、补贴等形式花巨资推广，等资金耗尽没钱补贴的时候，才发现用户数随之停滞不前，活跃用户数直线下降。这时再想调整功能却发现已经没钱了。<br>所以，抓信不是您项目成败的关键因素。只要您的系统能解决用户的真实需求，一定会形成自发增长。希望开发者聚焦于创造真实价值，而不是创造虚假的繁荣。</p>
@@ -334,8 +369,6 @@
 <p>7，消息推送的权限问题：<br>如果用户没有关注这个网站，则不能推送消息；如果两个抓信用户不是好友，不能互相发消息，这对于一般的任务管理系统来说，需要特别注意，此时发的任务，只能把任务消息的发送者和接收者都写成同一个人才行</p>
 <p>抓信sdk的jar包依赖okhttp3<br>1，在html代码里，对于<a>标签里面的链接地址，如果是_blank，则抓信会用新窗口打开页面。但如果这个超链接是javascript动态生成的，则要用getUrl4_Blank(url)转换一下，具体请参考demo代码webContent/mobile/c/index.jsp里面的代码。<br>因为抓信只是在网页加载的时候判断一下哪个链接需要用新窗口打开，对用动态产生的代码，抓信目前版本还无法判断。抓信计划在2.0版本解决这个问题。</a></p>
 
-          
-        
       
     </div>
     
@@ -350,14 +383,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/抓信-tomcat-infbox/" rel="tag"># 抓信,tomcat,infbox</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -367,10 +406,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -378,6 +418,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -398,8 +449,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -452,6 +512,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#抓信是什么"><span class="nav-number">1.</span> <span class="nav-text">抓信是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网站跟抓信对接的好处"><span class="nav-number">2.</span> <span class="nav-text">网站跟抓信对接的好处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抓信二次开发与微信二次开发的不同"><span class="nav-number">3.</span> <span class="nav-text">抓信二次开发与微信二次开发的不同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何与抓信对接"><span class="nav-number">4.</span> <span class="nav-text">如何与抓信对接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-注册-管理抓信服务号"><span class="nav-number">5.</span> <span class="nav-text">3.1 注册/管理抓信服务号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-用抓信实现网站扫码登陆"><span class="nav-number">6.</span> <span class="nav-text">3.2 用抓信实现网站扫码登陆</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-1-用Eclipse导入tomcat-demo项目，打开WebContent-gt-WEB-INF-gt-web-xml文件，设置好infbox-app-id、infbox-app-secret、site-url和mysql-url等数据库相关参数后，启动tomcat"><span class="nav-number">6.1.</span> <span class="nav-text">3.2.1 用Eclipse导入tomcat-demo项目，打开WebContent->WEB-INF->web.xml文件，设置好infbox_app_id、infbox_app_secret、site_url和mysql_url等数据库相关参数后，启动tomcat,</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-用抓信实现强大的手机客户端消息推送"><span class="nav-number">7.</span> <span class="nav-text">3.3 用抓信实现强大的手机客户端消息推送</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-1-消息类型"><span class="nav-number">7.1.</span> <span class="nav-text">3.3.1 消息类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-2-请示模板"><span class="nav-number">7.2.</span> <span class="nav-text">3.3.2 请示模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-抓信手机客户端插件开发"><span class="nav-number">7.3.</span> <span class="nav-text">3.4 抓信手机客户端插件开发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-制作抓信手机客户端快捷菜单"><span class="nav-number">7.4.</span> <span class="nav-text">3.5 制作抓信手机客户端快捷菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-用抓信实现扫码关注帖子动态"><span class="nav-number">7.5.</span> <span class="nav-text">3.6 用抓信实现扫码关注帖子动态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-7-支付接口"><span class="nav-number">7.6.</span> <span class="nav-text">3.7 支付接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-8-地理位置接口"><span class="nav-number">7.7.</span> <span class="nav-text">3.8 地理位置接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-9-抓信任务管理系统如何培养高效能习惯"><span class="nav-number">7.8.</span> <span class="nav-text">3.9 抓信任务管理系统如何培养高效能习惯</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他注意事项"><span class="nav-number">8.</span> <span class="nav-text">其他注意事项</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -585,6 +661,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -631,6 +711,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'infbox',
+            repo: 'infbox.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '4ab0cc42109bc989ea2ef9957286da453e586c59',
+            
+                client_id: '3258ce18c20b73f46353'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
